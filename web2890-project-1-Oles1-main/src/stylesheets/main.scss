@@ -210,3 +210,33 @@ $pink: #ff3466;
 .my-border {
   border-color: $myprimary;
 }
+/* Arrow: &#11162; */
+.custom-ul {
+  border-top: 2px solid $mytertiary;
+  border-left: 2px solid $mytertiary;
+  border-radius: 2%;
+  padding: 5px 10px 5px 30px;
+  background-color: $base-bg-color;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(58, 90, 64, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(58, 90, 64, 1);
+  box-shadow: 10px 10px 5px 0px rgba(58, 90, 64, 1);
+
+  // li {
+  // list-style-type: none;
+  // list-style-type: square;
+  // list-style-image: url(../images/clipboard-check.svg);
+  // list-style-image: url(../images/arrow-right-circle-fill.svg);
+  // margin-bottom: 1rem;
+  // }
+  li {
+    list-style-type: none;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  li::marker {
+    // color: $myprimary;
+    content: url(../images/arrow-right-circle-fill.svg);
+    // font-size: 5rem;
+  }
+}
